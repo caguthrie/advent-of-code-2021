@@ -1,0 +1,10 @@
+{
+  "name": "advent_2021",
+  "version": "1.0.0",
+  "description": "Solutions for 'Advent of Code 2021'",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Chris Guthrie",
+  "license": "ISC",
+  "homepage": "https://adventofcode.com/2021/"
+}
