@@ -1,11 +1,10 @@
 import fs from 'fs';
 
 let buffer = fs.readFileSync('./data.txt');
-let dataPoints = buffer.toString().split('\n');
+let dataPoints = buffer.toString().split('\n').map(point => parseInt(point));
 
 let count = 0;
-let last = null;
-dataPoints = dataPoints.map(point => parseInt(point));
+let last: number | null = null;
 dataPoints.forEach((point, idx) => {
     let sum = point;
     if (dataPoints[idx + 1]) {

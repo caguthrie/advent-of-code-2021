@@ -1,17 +1,20 @@
 import fs from 'fs';
 
 let buffer = fs.readFileSync('./data.txt');
-let dataPoints = buffer.toString().split('\n');
 
-const findRating = (points, bitPosition, ratingType) => {
+type Bit = '0' | '1';
+
+let dataPoints: string[] = buffer.toString().split('\n');
+
+const findRating = (points: string[], bitPosition: number, ratingType: 'oxygen' | 'co2'): string => {
     // Base case
     if (points.length === 1) {
         return points[0];
     }
 
-    const groups = {'0': [], '1': []};
+    const groups: {[K in Bit]: string[]} = {'0': [], '1': []};
     points.forEach(point => {
-       groups[point[bitPosition]].push(point);
+       groups[point[bitPosition] as Bit].push(point);
     });
     if (groups['0'].length > groups['1'].length) {
         return findRating(groups[ratingType === 'oxygen' ? '0' : '1'], bitPosition + 1, ratingType);

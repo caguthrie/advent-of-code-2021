@@ -3,7 +3,7 @@ import fs from 'fs';
 let buffer = fs.readFileSync('./data.txt');
 let dataPoints = buffer.toString().split('\n');
 
-let oneBitCounts = [...dataPoints[0]].map(_ => 0);
+let oneBitCounts: number[] = [...dataPoints[0]].map(_ => 0);
 dataPoints.forEach((point) => {
     [...point].forEach((char, idx) => {
         if (char === '1') {
