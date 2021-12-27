@@ -7,5 +7,9 @@
   "author": "Chris Guthrie",
   "license": "MIT",
   "homepage": "https://adventofcode.com/2021/",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.2",
+    "typescript": "^4.5.4"
+  }
 }
