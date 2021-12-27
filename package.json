@@ -5,6 +5,6 @@
   "main": "index.js",
   "keywords": [],
   "author": "Chris Guthrie",
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "https://adventofcode.com/2021/"
 }
