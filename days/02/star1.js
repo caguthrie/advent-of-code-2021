@@ -1,4 +1,4 @@
-const fs = require('fs');
+import fs from 'fs';
 
 let buffer = fs.readFileSync('./data.txt');
 let dataPoints = buffer.toString().split('\n');
