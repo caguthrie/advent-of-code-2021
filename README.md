@@ -8,4 +8,4 @@ In the [days](./days) directory, there is a directory for each day I have soluti
 
 To set up the project, run `npm i` in the project root.
 
-To run the solution, `cd` in to the appropriate directory and run a star file with `ts-node`, e.g. `ts-node star1.ts`
+To run the solution, `cd` in to the appropriate directory and run a star file with `ts-node`, e.g. `cd days/01 && ts-node star1.ts`
